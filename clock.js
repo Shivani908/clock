@@ -5,13 +5,11 @@ secondHand = document.querySelector(".second"),
 modeSwitch = document.querySelector(".mode-switch");
 
 
-
 if(localStorage.getItem("mode")==="Dark Mode")
 {
     body.classList.add("dark");
     modeSwitch.textContent = "Light Mode";
 }
-
 
 modeSwitch.addEventListener("click", ()=>{
     body.classList.toggle("dark");
@@ -19,8 +17,6 @@ modeSwitch.addEventListener("click", ()=>{
     modeSwitch.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
     localStorage.setItem("mode", isDarkMode ? "Dark Mode" : "Light Mode");
 });
-
-
 
 const updateTime = () =>{
     let date = new Date(),
@@ -33,7 +29,6 @@ const updateTime = () =>{
     minuteHand.style.transform = `rotate(${minToDeg}deg)`;
     hourHand.style.transform = `rotate(${hrToDeg}deg)`;
 }
-
 
 setInterval(updateTime, 1000);
 
