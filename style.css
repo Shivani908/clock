@@ -7,10 +7,9 @@
 :root{
     --primary-color:#f6f7fb;
     --white-clor:#fff;
-    --black-color:#18191a;
+    --black-color:#303335;
     --red-color:#e74c3c;
 }
-
 
 body{
     display: flex;
@@ -20,15 +19,12 @@ body{
     background: var(--primary-color);
 }
 
-
 body.dark{
-    --primary-color:#242526;
-    --wite-color:#18101a;
-    --black-color:#fff;
+    --primary-color:#35383b;
+    --wite-color:#302234;
+    --black-color:#978a8a;
     --red-color:#e74c3c;
 }
-
-
 
 .container{
     display: flex;
@@ -57,7 +53,6 @@ body.dark{
     transform: rotate(calc(var(--i) * (360deg /12)));
 }
 
-
 .clock label span{
     display: inline-block;
     font-size: 30px;
@@ -66,8 +61,6 @@ body.dark{
     transform: rotate(calc(var(--i) * (-360deg / 12)));
 }
 
-
-
 .container .indicator{
     position: absolute;
     width: 10px;
@@ -75,7 +68,6 @@ body.dark{
     display: flex;
     justify-content: center;
  }
-
 
 .indicator::before {
     content: "";
@@ -88,7 +80,6 @@ body.dark{
     border: 6px solid var(--red-color);
 }
 
-
 .hand.second{
     position: absolute;
     height: 130px;
@@ -98,9 +89,6 @@ body.dark{
     transform-origin:bottom;
     background: var(--red-color);
 }
-
-
-
 
 .hand.minute{
     position: absolute;
@@ -112,7 +100,6 @@ body.dark{
     background: var(--black-color);
 }
 
-
 .hand.hour{
     position: absolute;
     height: 100px;
@@ -122,8 +109,6 @@ body.dark{
     transform-origin: bottom;
     background: var(--black-color);
 }
-
-
 
 .mode-switch{
     padding: 10px 20px;
